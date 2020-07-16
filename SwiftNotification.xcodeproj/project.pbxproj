@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		813B386424C062AC00AF6931 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				81606740245163D10022780F /* SwiftNotification.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		81606720245163BB0022780F = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +68,11 @@
 		8160672B245163BB0022780F /* SwiftNotification */ = {
 			isa = PBXGroup;
 			children = (
+				813B386424C062AC00AF6931 /* Class */,
 				8160672C245163BB0022780F /* AppDelegate.swift */,
 				8160672E245163BB0022780F /* SceneDelegate.swift */,
 				81606730245163BB0022780F /* ViewController.swift */,
 				8160674224516CF30022780F /* PushViewController.swift */,
-				81606740245163D10022780F /* SwiftNotification.swift */,
 				81606732245163BB0022780F /* Main.storyboard */,
 				81606735245163C00022780F /* Assets.xcassets */,
 				81606737245163C00022780F /* LaunchScreen.storyboard */,
