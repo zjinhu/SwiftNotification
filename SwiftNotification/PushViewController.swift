@@ -49,16 +49,22 @@ class PushViewController: UIViewController {
         pushbtn.backgroundColor = .yellow
         pushbtn.addTarget(self, action: #selector(push), for: .touchUpInside)
         self.view.addSubview(pushbtn)
+        
+        notifiCenter.addNotifications(["123","345","456"]) { (noti) in
+            print("\(String(describing: noti.object)) -- \(String(describing: noti.userInfo))")
+        }
     }
     
         @objc func push(){
             print("发通知")
-            self.notifiCenter.postNotification("456", object: "aaaaaaa", userInfo: ["key":"fefe"])
+            self.notifiCenter.postNotification("456", object: "aaaaaaa", userInfo: ["key":"aaaaaa"])
+            self.notifiCenter.postNotification("345", object: "bbbbbbb", userInfo: ["key":"bbbbbb"])
         }
     
     @objc func deleteNoti(){
 //            self.notifiCenter.postNotification("123", object: "aaaaaaa", userInfo: ["key":"fefe"])
         print("删通知")
+        self.notifiCenter.postNotification("123", object: "cccccc", userInfo: ["key":"cccccc"])
         self.notifiCenter.removeNotification(name : "456")
         self.notifiCenter.removeNotification(notiName: UIApplication.willEnterForegroundNotification)
     }
@@ -72,4 +78,7 @@ class PushViewController: UIViewController {
     }
     */
 
+    deinit {
+        print("deinit")
+    }
 }
