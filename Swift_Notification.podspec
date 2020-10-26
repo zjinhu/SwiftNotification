@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 
-  s.source_files = 'SwiftNotification/Class/SwiftNotification.swift' 
+  s.source_files = 'Sources/**/*' 
 end
