@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Swift_Notification'
-  s.version          = '0.6.0'
+  s.version          = '0.3.2'
   s.summary          = '路由.'
 
   s.description      = <<-DESC
